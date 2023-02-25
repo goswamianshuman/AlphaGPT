@@ -34,7 +34,7 @@ function Sidebar() {
           {/* map through chat rows */}
           <div>
             {loading && (
-              <div className="animate-pulse text-center text-[#a408e2] font-bold text-base">
+              <div className="animate-pulse text-center text-[#0e0014] font-bold text-base">
                 <p>Loading...</p>
               </div>
             )}
@@ -47,18 +47,20 @@ function Sidebar() {
       </div>
 
       {session && (
-        <div className="py-5 flex flex-col mx-auto max-w-7xl">
+        <div className="py-5 flex flex-col mx-auto max-w-[90%] bg-white/60 px-4 rounded-sm shadow-sm shadow-black/60">
           <div className="flex items-center justify-center gap-4 ">
             <img
-              className="h-12 w-12 rounded-full object-center border-solid border-[2px] border-[#170113]"
+              className="h-12 w-12 rounded-full object-center "
               src={session.user?.image!}
               alt="profile picture"
             />
-            <p className="text-[#170113] font-bold ">{session.user?.name!}</p>
+            <p className="text-[#170113] font-semibold ">
+              {session.user?.name!}
+            </p>
           </div>
           <button
             onClick={() => signOut()}
-            className="mt-5 px-4 py-1 text-center text-sm hover:bg-[#170113]/60 hover:text-white hover:transition-all ease-linear delay-300 border-solid border-[1px] border-[#170113]"
+            className="mt-5 min-w-full outline-none px-4 py-1 text-center text-sm hover:bg-[#170113]/60 hover:text-white transition-all ease-in-out overflow-hidden delay-300 border-solid border-[1px] border-[#170113]"
           >
             logout
           </button>
