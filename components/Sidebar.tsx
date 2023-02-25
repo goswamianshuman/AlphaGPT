@@ -34,7 +34,7 @@ function Sidebar() {
           {/* map through chat rows */}
           <div>
             {loading && (
-              <div className="animate-pulse text-center text-[#33c496] font-light text-base">
+              <div className="animate-pulse text-center text-[#a408e2] font-bold text-base">
                 <p>Loading...</p>
               </div>
             )}
