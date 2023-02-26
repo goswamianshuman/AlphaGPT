@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import admin from "firebase-admin";
-import query from "../../lib/query";
+import query from "../../lib/queryApi";
 import { admin_database } from "../../AdminFirebase";
 import NextCors from "nextjs-cors";
 

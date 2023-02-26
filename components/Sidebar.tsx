@@ -47,7 +47,7 @@ function Sidebar() {
       </div>
 
       {session && (
-        <div className="py-5 flex flex-col mx-auto max-w-[90%] bg-white/60 px-4 rounded-sm shadow-sm shadow-black/60">
+        <div className="py-5 flex flex-col mx-auto min-w-[90%] bg-white/60 px-4 rounded-sm shadow-sm shadow-black/60">
           <div className="flex items-center justify-center gap-4 ">
             <img
               className="h-12 w-12 rounded-full object-center "

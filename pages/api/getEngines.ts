@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import openai from "../../lib/alphaGpt";
+import openai from "../../lib/gpt";
 
 type Option = {
   value: string;
