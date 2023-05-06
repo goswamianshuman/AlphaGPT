@@ -13,7 +13,7 @@ const query = async (prompt: string, chatId: string, model: string) => {
     })
     .then((res) => res.data.choices[0].text)
     .catch((err) => `alpha was unable to find solution - ${err.message}`);
-
+  console.log(model);
   return res;
 };
 

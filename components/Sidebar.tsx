@@ -23,6 +23,7 @@ function Sidebar() {
       <div className="flex-1">
         <div>
           {/* new chat */}
+
           <NewChat />
           <div className="hidden sm:inline">
             {/* model selection */}
